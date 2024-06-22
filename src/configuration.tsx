@@ -1,5 +1,6 @@
 import { Role } from "constant/roles"
 import { Auth } from "page/Auth"
+import { Dashboard } from "page/Dashboard"
 import { NotFound } from "page/NotFound"
 import { Reports } from "page/Reports"
 import { Suppliers } from "page/Suppliers"
@@ -36,6 +37,7 @@ export const configuration = {
       name: "Главная",
       path: "/",
       role: Role.MANAGER,
+      component: <Dashboard />,
     },
     {
       type: "main",
