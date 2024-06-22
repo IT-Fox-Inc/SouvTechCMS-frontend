@@ -22,6 +22,13 @@ export const AppRouter = () => {
       <QueryClientProvider client={queryClient}>
         <AuthContextProvider>
           <UserContextProvider>
+            {/* <Routes>
+              {sidePages.map(({ name, path, component }) => (
+                <Route key={name} path={path} element={component} />
+              ))}
+            </Routes> */}
+
+            {/* <Firewall> */}
             <Routes>
               {sidePages.map(({ name, path, component }) => (
                 <Route key={name} path={path} element={component} />
@@ -38,6 +45,7 @@ export const AppRouter = () => {
                 ))}
               </Route>
             </Routes>
+            {/* </Firewall> */}
           </UserContextProvider>
         </AuthContextProvider>
       </QueryClientProvider>
