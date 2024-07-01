@@ -1,5 +1,6 @@
 import { Role } from "constant/roles"
 import { Auth } from "page/Auth"
+import { NoAccess } from "page/NoAccess"
 import { NotFound } from "page/NotFound"
 import { Purchases } from "page/Purchases"
 import { Reports } from "page/Reports"
@@ -97,6 +98,12 @@ export const configuration = {
       name: "NotFound",
       path: "/*",
       component: <NotFound />,
+    },
+    {
+      type: "side",
+      name: "NoAccess",
+      path: "/noaccess",
+      component: <NoAccess />,
     },
   ] as Route[],
   api: {
